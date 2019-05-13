@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Retailer"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/selectYourRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retailer"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="donate"/>
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sell "
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="openSellForm"/>
+
+
+    <Button
+        android:id="@+id/compost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compost"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="compost"/>
+
+</LinearLayout>

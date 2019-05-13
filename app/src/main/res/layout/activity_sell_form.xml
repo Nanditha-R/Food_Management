@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellForm">
+
+
+    <TextView
+        android:id="@+id/sellFormTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell Form"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_name"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/sellFormTextView"
+        android:layout_alignEnd="@+id/itemQuantity"
+        />
+
+    <EditText
+        android:id="@+id/itemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@id/itemNameTextView"
+        android:layout_toEndOf="@id/itemNameTextView"/>
+
+    <TextView
+        android:id="@+id/itemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_quantity"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/itemNameTextView"
+        />
+
+    <EditText
+        android:id="@+id/itemQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@id/itemQuantity"
+        android:layout_toEndOf="@id/itemQuantity"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/itemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/itemQuantity"
+        android:layout_alignEnd="@+id/itemQuantity"
+
+        />
+
+    <EditText
+        android:id="@+id/itemPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@id/itemPriceTextView"
+        android:layout_toEndOf="@id/itemPriceTextView"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item"
+        android:textSize="30sp"
+        android:layout_below="@id/itemPriceTextView"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="addItem"/>
+
+</RelativeLayout>

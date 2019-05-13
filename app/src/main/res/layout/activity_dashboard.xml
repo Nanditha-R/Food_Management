@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/selectYourRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Role"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/farmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Farmer"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="goToSellProduct"/>
+
+    <Button
+        android:id="@+id/retailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retailer"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="goToRetailer"/>
+
+
+    <Button
+        android:id="@+id/consumer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consumer"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:onClick="goToConsumer"/>
+
+</LinearLayout>
