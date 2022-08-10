@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f498ad">
 
 
     <TextView
@@ -9,19 +10,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
 
     <TextView
         android:id="@+id/itemQuantityTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
     <TextView
         android:id="@+id/itemPriceTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
 
 </LinearLayout>

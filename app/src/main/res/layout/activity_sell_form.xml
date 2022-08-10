@@ -4,27 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SellForm">
+    tools:context=".SellForm"
+    android:background="#f498ad">
 
 
     <TextView
         android:id="@+id/sellFormTextView"
+        android:text="SELL FORM"
+        android:textColor="@color/text_shadow"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sell Form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
         android:textSize="40sp"
-        android:layout_centerHorizontal="true"/>
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1" />
 
     <TextView
         android:id="@+id/itemNameTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="211dp"
         android:layout_height="wrap_content"
-        android:text="@string/item_name"
-        android:textSize="30sp"
-        android:layout_marginTop="40dp"
         android:layout_below="@id/sellFormTextView"
-        android:layout_alignEnd="@+id/itemQuantity"
-        />
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="-32dp"
+        android:fontFamily="serif-monospace"
+        android:text="Item name:"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/itemNameEditText"
@@ -38,10 +49,14 @@
         android:id="@+id/itemQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/item_quantity"
-        android:textSize="30sp"
+        android:text="Item Quantity:"
         android:layout_marginTop="40dp"
         android:layout_below="@id/itemNameTextView"
+        android:layout_marginEnd="-32dp"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="32sp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -57,11 +72,14 @@
         android:id="@+id/itemPriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/price"
-        android:textSize="30sp"
-        android:layout_marginTop="40dp"
         android:layout_below="@id/itemQuantity"
-        android:layout_alignEnd="@+id/itemQuantity"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-32dp"
+        android:fontFamily="serif-monospace"
+        android:text="Price:"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="32sp"
+        android:textStyle="bold"
 
         />
 
@@ -77,12 +95,13 @@
 
     <Button
         android:id="@+id/addItem"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_item"
         android:textSize="30sp"
         android:layout_below="@id/itemPriceTextView"
         android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
         android:background="@android:color/holo_blue_dark"
         android:onClick="addItem"/>
 

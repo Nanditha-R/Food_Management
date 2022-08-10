@@ -5,42 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SellProduct"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#f498ad">
 
     <TextView
         android:id="@+id/selectYourRole"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sell Product"
+        android:text="SELL PRODUCT"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/grey_font"
+        android:layout_marginTop="56dp"
         android:textSize="40sp"
-        android:gravity="center"/>
+        android:gravity="center"/>/>
 
     <Button
         android:id="@+id/farmer"
-        android:layout_width="match_parent"
+        android:text="Grains   🌱"
+        android:onClick="openSellForm"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:text="Grade A"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="openSellForm"/>
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/retailer"
-        android:layout_width="match_parent"
+        android:text="Vegetables  🧅"
+        android:onClick="openSellForm"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:text="Grade B"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="openSellForm"/>
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp" />
 
 
     <Button
         android:id="@+id/consumer"
-        android:layout_width="match_parent"
+        android:text="Fruits    🍇"
+        android:onClick="openSellForm"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:text="Grade C"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="openSellForm"/>
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp"/>
 
 </LinearLayout>

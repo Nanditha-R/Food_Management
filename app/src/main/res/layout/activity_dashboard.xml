@@ -5,42 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dashboard"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#f498ad">
 
     <TextView
         android:id="@+id/selectYourRole"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Your Role"
-        android:textSize="40sp"
+        android:text="SELECT YOUR ROLE"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/grey_font"
+        android:layout_marginTop="56dp"
+        android:textSize="30sp"
         android:gravity="center"/>
 
     <Button
         android:id="@+id/farmer"
-        android:layout_width="match_parent"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:text="Farmer"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="goToSellProduct"/>
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"
+        android:layout_marginTop="56dp"
+        android:onClick="goToSellProduct"
+        android:text="Farmer  👨‍🌾"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/retailer"
-        android:layout_width="match_parent"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:text="Retailer"
+        android:layout_marginHorizontal="119dp"
         android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="goToRetailer"/>
+        android:onClick="goToRetailer"
+        android:text="Retailer  📦"
+        android:textSize="19dp" />
 
 
     <Button
         android:id="@+id/consumer"
-        android:layout_width="match_parent"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
-        android:text="Consumer"
+        android:layout_marginHorizontal="119dp"
         android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:onClick="goToConsumer"/>
+        android:onClick="goToConsumer"
+        android:text="Consumer  🧍"
+        android:textSize="17dp" />
 
 </LinearLayout>

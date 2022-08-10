@@ -4,20 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f498ad">
 
     <TextView
         android:id="@+id/loginTextView"
+        android:textColor="@color/text_shadow"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:textSize="40sp"
-        />
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1" />
+
 
     <TextView
         android:id="@+id/usernameTextView"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/AppTheme"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/username"
@@ -36,6 +47,9 @@
 
     <TextView
         android:id="@+id/passwordTextView"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/AppTheme"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
@@ -55,12 +69,26 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:layout_below="@id/passwordTextView"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="56dp"
         android:background="@android:color/holo_blue_dark"
-        android:onClick="doToDashboard"/>
+        android:fontFamily="serif-monospace"
+        android:onClick="doToDashboard"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="302dp"
+        android:layout_height="214dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/homepage"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="130dp" />
 
 </RelativeLayout>

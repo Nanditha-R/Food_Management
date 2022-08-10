@@ -5,42 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Retailer"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#f498ad"
+    >
 
     <TextView
         android:id="@+id/selectYourRole"
+        android:text="RETAILER"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Retailer"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/grey_font"
+        android:layout_marginTop="56dp"
         android:textSize="40sp"
         android:gravity="center"/>
 
     <Button
         android:id="@+id/donate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Donate"
-        android:layout_marginTop="40dp"
+        android:text="Donate   👚"
         android:textSize="20sp"
-        android:onClick="donate"/>
+        android:onClick="donate"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"
+        android:layout_marginTop="56dp"
+        />
 
     <Button
         android:id="@+id/sell"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sell "
+        android:text="Sell   💴"
         android:layout_marginTop="40dp"
         android:textSize="20sp"
-        android:onClick="openSellForm"/>
+        android:onClick="openSellForm"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp" />
 
 
     <Button
         android:id="@+id/compost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Compost"
+        android:text="Compost  🪴 "
+        android:onClick="compost"
         android:layout_marginTop="40dp"
         android:textSize="20sp"
-        android:onClick="compost"/>
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectYourRole"
+        android:layout_marginHorizontal="113dp"/>
 
 </LinearLayout>
